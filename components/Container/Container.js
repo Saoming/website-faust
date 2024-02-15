@@ -1,12 +1,7 @@
-import styles from './Container.module.scss';
-import className from 'classnames/bind';
-
-let cx = className.bind(styles);
-
-export default function Container({ children, className }) {
-  return (
-    <div className={cx(['component', className])}>
-      {children}
-    </div>
-  );
+export default function Container({children, className}) { 
+    return (
+        <div className={`${className ? className : ''} px-[32px] lg:px-0 mx-auto max-w-screen-lg`}>
+            {children}
+        </div>
+    )
 }

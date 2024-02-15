@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+      @apply mb-8;
+    }
+    p {
+      
+      @apply mb-3;
+    }
+    .font-outline-2 {
+      -webkit-text-stroke: 1px #FFF;
+    }
+}
